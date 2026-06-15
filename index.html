@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Cleaning Inc</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <link rel="icon" href="imagenes/Adobe Express - file.png" type="image/png">
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imagenes/Adobe Express - file.png" alt="AC Cleaning Logo" class="logo-img">
+                AC Cleaning
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#servicios">Services</a></li>
+                <li><a href="#nosotros">About Us</a></li>
+                <li><a href="#ubicacion">Location</a></li>
+                <li><a href="#contacto">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="bubble-container" id="bubbleContainer"></div>
+        <div class="hero-content">
+            <h1> Spotless Homes, Guaranteed </h1>
+            <p>Professional commercial and residential cleaning services tailored to your needs.</p>
+            <a href="#servicios" class="btn btn-primary">Our Services</a>
+            <a href="#contacto" class="btn btn-secondary">Get a Free Estimate</a>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2 class="section-title">Our Services</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="product-content">
+                    <h3>Residential Cleaning</h3>
+                    <p>Deep or regular cleaning for houses and apartments. We make your living space shine.</p>
+                    <a href="#contacto" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"
+                    style="background: linear-gradient(135deg, var(--secondary-color), rgba(124, 179, 66, 0.6));">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="product-content">
+                    <h3>Office & Commercial</h3>
+                    <p>Professional cleaning for workplaces, offices, and commercial buildings to keep them pristine.
+                    </p>
+                    <a href="#contacto" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"
+                    style="background: linear-gradient(135deg, rgba(124, 179, 66, 0.8), var(--secondary-color));">
+                    <i class="fas fa-truck-ramp-box"></i>
+                </div>
+                <div class="product-content">
+                    <h3>Move In / Move Out</h3>
+                    <p>Thorough cleaning services designed to prepare a home or apartment for its next occupants.</p>
+                    <a href="#contacto" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2 class="section-title">About AC Cleaning Inc</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="tu-imagen.jpg" alt="" class="img-back">
+
+                <i class="fas fa-sparkles"></i>
+            </div>
+            <div class="about-text">
+                <h2>Quality & Care You Can Trust</h2>
+                <p>AC Cleaning Inc is a professional cleaning company dedicated to providing top-tier residential and
+                    commercial solutions. We focus on reliability, detail, and complete customer satisfaction.</p>
+                <p>We use high-quality products and proven techniques to ensure every corner of your property is
+                    perfectly sanitized, maintaining a safe and healthy environment.</p>
+                <ul class="features">
+                    <li>Professional and experienced cleaning crew</li>
+                    <li>Eco-friendly and safe cleaning products</li>
+                    <li>Flexible scheduling (Weekly, Bi-Weekly, Monthly, One-Time)</li>
+                    <li>Fully insured and trusted local service</li>
+                    <li>100% satisfaction guaranteed</li>
+                    <li>Competitive pricing with completely Free Estimates</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion">
+        <h2 class="section-title">Find Us on the Map</h2>
+        <p style="text-align: center; color: var(--text-light); margin-bottom: 1.5rem;">Proudly serving our community.
+            Check our main coverage address below!</p>
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2 class="section-title">Contact & Request Estimate</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>220 Morgan St, 02721<br>Fall River, MA - USA</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone Numbers</h4>
+                        <p>774 888 8439 (Español)<br>774 888 7029 (English)</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>Alejandra.cleaning@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-calendar-days"></i>
+                    <div>
+                        <h4>Frequency Options</h4>
+                        <p>Weekly / Bi-Weekly<br>Monthly / One-Time Service</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                <!-- Tu clave secreta oculta -->
+                <input type="hidden" name="access_key" value="01468d7a-d1ad-4889-836b-98b8206f8c37">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Requested Service</label>
+                    <input type="text" id="subject" name="subject" placeholder="e.g., Residential Cleaning, Move Out"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message or Special Instructions</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>✨ AC Cleaning Inc</h3>
+                <p>Your trust is our greatest asset. Dedicated to keeping your spaces pristine with professionalism and
+                    care.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#servicios">Services</a></li>
+                    <li><a href="#nosotros">About Us</a></li>
+                    <li><a href="#contacto">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p>&copy; 2026 AC Cleaning Inc. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="leandro.js"></script>
+
+</body>
+
+</html>
